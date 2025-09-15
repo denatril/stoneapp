@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Crystal App",
+    "slug": "crystal-app-mvp",
+    "version": "1.0.0",
+    "description": "Discover the magic of crystals. Build your collection, learn properties, and analyze stones with AI.",
+    "keywords": ["crystal", "stones", "collection", "ai", "gemstone", "minerals"],
+    "category": "LIFESTYLE",
+    "privacy": "public",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#667eea"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.crystalapp.mobile",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan and analyze crystals with AI.",
+        "NSPhotoLibraryUsageDescription": "This app accesses your photo library to analyze crystal images."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#667eea"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.crystalapp.mobile",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Crystal App to access your camera to scan crystals."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Crystal App to access photos to analyze crystal images."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "eas": {
+        "projectId": "crystal-app-mvp"
+      }
+    }
+  }
+}

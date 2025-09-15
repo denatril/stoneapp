@@ -1,0 +1,4 @@
+Bu klasöre card-back.png dosyanızı ekleyin.
+
+Geçici olarak, uygulama fallback tasarımını kullanacak.
+Kendi PNG dosyanızı ekledikten sonra uygulamayı yeniden başlatın.
